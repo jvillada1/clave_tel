@@ -48,10 +48,4 @@ spec:
         ports:
         - containerPort: 80
           name: wordpress
-        volumeMounts:
-          - mountPath: /var/www/html/wp-content/uploads
-            name: nfs-storage
-      volumes:
-        - name: nfs-storage
-          persistentVolumeClaim:
-            claimName: nfs-pvc
+        
